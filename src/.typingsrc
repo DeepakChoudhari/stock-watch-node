@@ -1,0 +1,2 @@
+proxy=http://x.x.x.x:xx/
+rejectUnauthorized=false
