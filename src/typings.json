@@ -1,3 +1,5 @@
+// typings install dt~node --global --save
+
 {
   "globalDevDependencies": {
     "node": "registry:dt/node#6.0.0+20160909174046"

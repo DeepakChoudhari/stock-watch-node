@@ -1,0 +1,20 @@
+{
+  "name": "stock-watch-node",
+  "version": "1.0.0",
+  "description": "A node app for returning stock data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeepakChoudhari/stock-watch-node.git"
+  },
+  "author": "Deepak Choudhari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeepakChoudhari/stock-watch-node/issues"
+  },
+  "homepage": "https://github.com/DeepakChoudhari/stock-watch-node#readme"
+}
