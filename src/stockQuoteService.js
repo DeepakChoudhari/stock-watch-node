@@ -6,19 +6,21 @@
 const http = require('http');
 const options = {
     hostname: 'dev.markitondemand.com',
-    path: '/MODApis/Api/v2/Lookup/json?input=msft',
+    path: '/MODApis/Api/v2/Lookup/json?input=',
     method: 'GET'
 };
 
 class stockQuoteService {
-    lookupSymbol(symbol) {
-        var request = http.request(options, function(response){
+
+    lookupSymbol(symbol, callback) {
+        options.path = options.path + symbol;
+        var request = http.request(options, function(response) {
             debugger;
             response.setEncoding('utf8');
-            response.on('data', function(chunk){
+            response.on('data', function(chunk) {
                 console.log(`Response body: ${chunk}`);
+                callback(chunk);
             });
-            // console.log(`Response from server: ${response}`);
         });
 
         request.on('error', (error) => {
@@ -28,7 +30,6 @@ class stockQuoteService {
         request.end();
         
         console.log(`From within lookupSymbol: ${http}`);
-        
     }
 }
 
