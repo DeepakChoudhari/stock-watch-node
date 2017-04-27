@@ -1,5 +1,5 @@
 # stock-watch-node
-A http server implemented using Node JS that returns stock data in JSON format.
+An http api implemented using Node JS that returns stock data in JSON format.
 
 ## Pre-requisites for running the application
 After downloading the code run the following npm command from "stock-watch-app-node" folder. This command will install the [Typscript Definition Manager](https://www.npmjs.com/package/typings)
